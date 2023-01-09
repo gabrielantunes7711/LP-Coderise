@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="assets/css/app.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
     <title>CodeRise</title>
   </head>
   <body>
@@ -12,18 +14,22 @@
       <nav class="main-nav">
         <div class="container">
           <div class="left">
-            <a class="logo" href="#">CODE<span>RISE</span></a>
+            <a class="logo" href="#"
+              ><h1>CODE<span>RISE</span></h1></a
+            >
           </div>
 
           <div class="right">
             <address class="mail-phone-address">
-              <a href="mailto:contato@coderise.com.br"
+              <a href="mailto:contato@coderise.com.br" target="_blank"
                 ><img
                   src="./assets/img/icon-small-mail.svg"
                   alt="Ícone de uma carta"
                 />contato@coderise.com.br</a
               >
-              <a href="tel:+5399974-7712"
+              <a
+                href="https://api.whatsapp.com/send?phone=5399974-7712&text=Quero criar meu site!"
+                target="_blank"
                 ><img
                   src="./assets/img/icon-small-wpp.svg"
                   alt="Ícone do WhatsApp"
@@ -31,7 +37,12 @@
               >
             </address>
 
-            <a href="#" class="btn">QUERO MEU SITE</a>
+            <a
+              href="https://api.whatsapp.com/send?phone=5399974-7712&text=Quero criar meu site!"
+              target="_blank"
+              class="btn fade-up"
+              >QUERO MEU SITE</a
+            >
           </div>
         </div>
       </nav>
@@ -39,21 +50,28 @@
 
     <section class="section-hero odd-section">
       <div class="container">
-        <h1>Transformando <span>Criatividade</span> em <span>Código</span></h1>
+        <h2 class="fade-left">
+          Transformando <span>Criatividade</span> em <span>Código</span>
+        </h2>
 
-        <p>
+        <p class="fade-left">
           Transforme sua ideia em realidade com o poder da tecnologia. Temos uma
           equipe especializada em desenvolvimento de sites que irá transformar
           suas ideias em soluções digitais
         </p>
 
-        <a href="#" class="btn">QUERO SABER MAIS</a>
+        <a
+          href="https://api.whatsapp.com/send?phone=5399974-7712&text=Quero criar meu site!"
+          target="_blank"
+          class="fade-right btn"
+          >QUERO SABER MAIS</a
+        >
       </div>
     </section>
 
     <section class="section-benefits even-section">
       <div class="container">
-        <div class="left">
+        <div class="left fade-left">
           <h2>
             Gere <span>Experiência</span> e Converta <span>Acessos</span> em
             <span>Clientes</span>
@@ -66,14 +84,14 @@
         </div>
 
         <div class="right">
-          <div class="container-benefits">
-            <div class="benefit">
+          <ul class="container-benefits">
+            <li class="benefit open fade-right">
               <div class="top">
                 <div class="left">
-                  <span>+</span>
+                  <span>-</span>
                 </div>
                 <div class="right">
-                  <span>Usabilidade</span>
+                  <h3>Usabilidade</h3>
                 </div>
               </div>
 
@@ -85,15 +103,15 @@
                   purus sed magna. Aliquam erat volutpat.
                 </p>
               </div>
-            </div>
+            </li>
 
-            <div class="benefit">
+            <li class="benefit fade-right">
               <div class="top">
                 <div class="left">
                   <span>+</span>
                 </div>
                 <div class="right">
-                  <span>Usabilidade</span>
+                  <h3>Usabilidade</h3>
                 </div>
               </div>
 
@@ -105,15 +123,15 @@
                   purus sed magna. Aliquam erat volutpat.
                 </p>
               </div>
-            </div>
+            </li>
 
-            <div class="benefit">
+            <li class="benefit fade-right">
               <div class="top">
                 <div class="left">
                   <span>+</span>
                 </div>
                 <div class="right">
-                  <span>Usabilidade</span>
+                  <h3>Usabilidade</h3>
                 </div>
               </div>
 
@@ -125,26 +143,26 @@
                   purus sed magna. Aliquam erat volutpat.
                 </p>
               </div>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
 
     <section class="section-process odd-section">
       <div class="container">
-        <h2>
+        <h2 class="fade-up">
           Conheça Nosso <span>Processo</span> de <span>Desenvolvimento</span>
         </h2>
 
-        <div class="container-process">
-          <div class="process">
+        <ul class="container-process">
+          <li class="process fade-right">
             <div class="left">
               <span>1</span>
             </div>
 
             <div class="right">
-              <strong>Lorem Ipsum</strong>
+              <h3>Lorem Ipsum</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in
                 leo at massa efficitur auctor. Donec iaculis, diam id fermentum
@@ -152,15 +170,15 @@
                 magna. Aliquam erat volutpat.
               </p>
             </div>
-          </div>
+          </li>
 
-          <div class="process">
+          <li class="process fade-right">
             <div class="left">
               <span>2</span>
             </div>
 
             <div class="right">
-              <strong>Lorem Ipsum</strong>
+              <h3>Lorem Ipsum</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in
                 leo at massa efficitur auctor. Donec iaculis, diam id fermentum
@@ -168,15 +186,15 @@
                 magna. Aliquam erat volutpat.
               </p>
             </div>
-          </div>
+          </li>
 
-          <div class="process">
+          <li class="process fade-right">
             <div class="left">
               <span>3</span>
             </div>
 
             <div class="right">
-              <strong>Lorem Ipsum</strong>
+              <h3>Lorem Ipsum</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in
                 leo at massa efficitur auctor. Donec iaculis, diam id fermentum
@@ -184,15 +202,15 @@
                 magna. Aliquam erat volutpat.
               </p>
             </div>
-          </div>
+          </li>
 
-          <div class="process">
+          <li class="process fade-right">
             <div class="left">
               <span>4</span>
             </div>
 
             <div class="right">
-              <strong>Lorem Ipsum</strong>
+              <h3>Lorem Ipsum</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in
                 leo at massa efficitur auctor. Donec iaculis, diam id fermentum
@@ -200,14 +218,14 @@
                 magna. Aliquam erat volutpat.
               </p>
             </div>
-          </div>
-        </div>
+          </li>
+        </ul>
       </div>
     </section>
 
     <section class="section-demonstration odd-section">
       <div class="container">
-        <div class="left">
+        <div class="left fade-left">
           <h2>De uma nova cara para <span>seu site</span></h2>
           <p>
             Somos focados na experiência do usuário e criação de estratégias
@@ -216,12 +234,12 @@
         </div>
 
         <div class="right">
-          <div class="container-version-select">
+          <div class="container-version-select fade-right">
             <button type="button">Antes da Coderise</button>
             <button class="selected" type="button">Depois da Coderise</button>
           </div>
 
-          <figure>
+          <figure class="fade-up">
             <img
               src="./assets/img/polo-central-cursos-after.png"
               alt="Design do site Polo Central Cursos"
@@ -237,13 +255,13 @@
       </div>
     </section>
 
-    <section class="section-testimony odd-section">
+    <section class="section-testimony even-section">
       <div class="container">
-        <h2>
+        <h2 class="fade-left">
           Conheça Nosso <span>Processo</span> de <span>Desenvolvimento</span>
         </h2>
 
-        <blockquote>
+        <blockquote class="fade-right">
           <p>
             <span>"</span> Lorem ipsum dolor sit amet, consectetur adipiscing
             elit. Sed in leo at massa efficitur auctor. Donec iaculis, diam id
@@ -252,21 +270,21 @@
           </p>
         </blockquote>
 
-        <strong>Taina Sigales - Doveresearch</strong>
+        <p class="fade-left">Taina Sigales - <cite>Doveresearch</cite></p>
       </div>
     </section>
 
-    <section class="section-contact even-section">
+    <section class="section-contact odd-section">
       <div class="container">
         <div class="left">
-          <h2>
+          <h2 class="fade-left">
             Gere <span>Experiência</span> e Converta <span>Acessos</span> em
             <span>Clientes</span>
           </h2>
         </div>
 
         <div class="right">
-          <form action="">
+          <form action="" class="fade-right">
             <div class="container-input">
               <div class="left">
                 <img
@@ -276,7 +294,7 @@
               </div>
 
               <label for="name">Seu Nome<span>*</span></label>
-              <input type="text" id="name" required />
+              <input type="text" id="name" name="name" required />
             </div>
 
             <div class="container-input">
@@ -285,7 +303,7 @@
               </div>
 
               <label for="email">Seu E-mail<span>*</span></label>
-              <input type="text" id="email" required />
+              <input type="text" id="email" name="email" required />
             </div>
 
             <div class="container-input">
@@ -297,7 +315,7 @@
               </div>
 
               <label for="phone">Seu Whatsapp<span>*</span></label>
-              <input type="tel" id="phone" required />
+              <input type="tel" id="phone" name="phone" required />
             </div>
 
             <div class="container-input">
@@ -306,7 +324,7 @@
               </div>
 
               <label for="site">Seu Site</label>
-              <input type="text" id="site" />
+              <input type="text" id="site" name="site" />
             </div>
 
             <div class="container-input">
@@ -316,8 +334,9 @@
                   alt="Ícone de escrevendo em uma carta"
                 />
               </div>
-
+              <label for="tellMore">Conte-nos mais sobre seu projeto</label>
               <textarea
+                id="tellMore"
                 placeholder="Conte-nos mais sobre seu projeto"
               ></textarea>
             </div>
@@ -333,13 +352,15 @@
         <a class="logo" href="#">CODE<span>RISE</span></a>
 
         <address class="mail-phone-address">
-          <a href="mailto:contato@coderise.com.br"
+          <a href="mailto:contato@coderise.com.br" target="_blank"
             ><img
               src="./assets/img/icon-small-mail.svg"
               alt="Ícone de uma carta"
             />contato@coderise.com.br</a
           >
-          <a href="tel:+5399974-7712"
+          <a
+            href="https://api.whatsapp.com/send?phone=5399974-7712&text=Quero criar meu site!"
+            target="_blank"
             ><img
               src="./assets/img/icon-small-wpp.svg"
               alt="Ícone do WhatsApp"
@@ -348,6 +369,7 @@
         </address>
       </div>
     </footer>
+    <script src="assets/vendor/imask/imask.min.js"></script>
     <script src="assets/js/app.js"></script>
   </body>
 </html>
