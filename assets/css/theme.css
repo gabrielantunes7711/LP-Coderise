@@ -211,6 +211,11 @@ h2 span {
     padding: 4rem 0;
   }
 }
+/* ------- Sweet Alert ------- */
+.swal2-container.swal2-center > .swal2-popup {
+  font-size: 1.6rem;
+}
+
 /* ------- Buttons ------- */
 .btn {
   padding: 1rem 5rem;
@@ -481,6 +486,10 @@ h2 span {
   }
 }
 @media (max-width: 575px) {
+  .section-benefits .left h2 {
+    font-size: 2.8rem;
+    line-height: 4.5rem;
+  }
   .section-benefits {
     padding: 4rem 0;
   }
@@ -845,6 +854,9 @@ h2 span {
   height: 200vh;
   background-color: var(--tertiary-background-color);
 }
+.section-contact .right .fade-right {
+  width: 100%;
+}
 .section-contact form {
   position: relative;
   z-index: 2;
@@ -854,6 +866,15 @@ h2 span {
   align-items: center;
   flex-direction: column;
   gap: 1.5rem;
+}
+.section-contact form br {
+  display: none;
+}
+.wpcf7-response-output {
+  display: none;
+}
+.wpcf7-not-valid-tip {
+  display: none;
 }
 .section-contact form .container-input {
   display: flex;

@@ -4,17 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="assets/css/app.css" />
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
     <title>CodeRise</title>
+    <?php wp_head(); ?>
   </head>
   <body>
     <header class="main-header">
       <nav class="main-nav">
         <div class="container">
           <div class="left">
-            <a class="logo" href="#"
+            <a class="logo" href="<?php echo get_bloginfo("url") ?>"
               ><h1>CODE<span>RISE</span></h1></a
             >
           </div>
@@ -23,7 +21,7 @@
             <address class="mail-phone-address">
               <a href="mailto:contato@coderise.com.br" target="_blank"
                 ><img
-                  src="./assets/img/icon-small-mail.svg"
+                  src="<?php echo get_bloginfo("template_url") ?>/assets/img/icon-small-mail.svg"
                   alt="Ícone de uma carta"
                 />contato@coderise.com.br</a
               >
@@ -31,7 +29,7 @@
                 href="https://api.whatsapp.com/send?phone=5399974-7712&text=Quero criar meu site!"
                 target="_blank"
                 ><img
-                  src="./assets/img/icon-small-wpp.svg"
+                  src="<?php echo get_bloginfo("template_url") ?>/assets/img/icon-small-wpp.svg"
                   alt="Ícone do WhatsApp"
                 />(53) 9 9974-7712</a
               >
@@ -241,12 +239,13 @@
 
           <figure class="fade-up">
             <img
-              src="./assets/img/polo-central-cursos-after.png"
+              id="compareSiteImage"
+              src="<?php echo get_bloginfo("template_url") ?>/assets/img/polo-central-cursos-after.png"
               alt="Design do site Polo Central Cursos"
             />
             <div class="figure-bg">
               <div class="container-img">
-                <img src="assets/img/icon-mouse.svg" alt="Ícone de mouse" />
+                <img src="<?php echo get_bloginfo("template_url") ?>/assets/img/icon-mouse.svg" alt="Ícone de mouse" />
               </div>
               <span>Descanse o mouse aqui</span>
             </div>
@@ -284,77 +283,21 @@
         </div>
 
         <div class="right">
-          <form action="" class="fade-right">
-            <div class="container-input">
-              <div class="left">
-                <img
-                  src="assets/img/icon-peaple.svg"
-                  alt="Ícone de uma pessoa"
-                />
-              </div>
-
-              <label for="name">Seu Nome<span>*</span></label>
-              <input type="text" id="name" name="name" required />
-            </div>
-
-            <div class="container-input">
-              <div class="left">
-                <img src="assets/img/icon-mail.svg" alt="Ícone de uma carta" />
-              </div>
-
-              <label for="email">Seu E-mail<span>*</span></label>
-              <input type="text" id="email" name="email" required />
-            </div>
-
-            <div class="container-input">
-              <div class="left">
-                <img
-                  src="assets/img/icon-wpp-form.svg"
-                  alt="Ícone do WhatsApp"
-                />
-              </div>
-
-              <label for="phone">Seu Whatsapp<span>*</span></label>
-              <input type="tel" id="phone" name="phone" required />
-            </div>
-
-            <div class="container-input">
-              <div class="left">
-                <img src="assets/img/icon-globe.svg" alt="Ícone de um globo" />
-              </div>
-
-              <label for="site">Seu Site</label>
-              <input type="text" id="site" name="site" />
-            </div>
-
-            <div class="container-input">
-              <div class="left">
-                <img
-                  src="assets/img/icon-write.svg"
-                  alt="Ícone de escrevendo em uma carta"
-                />
-              </div>
-              <label for="tellMore">Conte-nos mais sobre seu projeto</label>
-              <textarea
-                id="tellMore"
-                placeholder="Conte-nos mais sobre seu projeto"
-              ></textarea>
-            </div>
-
-            <button type="submit" class="btn">QUERO MEU SITE</button>
-          </form>
+          <div class="fade-right">
+            <?php echo do_shortcode('[contact-form-7 id="15" title="Contato criação de sites"]') ?>
+          </div>
         </div>
       </div>
     </section>
 
     <footer class="main-footer">
       <div class="container">
-        <a class="logo" href="#">CODE<span>RISE</span></a>
+        <a class="logo" href="<?php echo get_bloginfo("url") ?>">CODE<span>RISE</span></a>
 
         <address class="mail-phone-address">
           <a href="mailto:contato@coderise.com.br" target="_blank"
             ><img
-              src="./assets/img/icon-small-mail.svg"
+              src="<?php echo get_bloginfo("template_url") ?>/assets/img/icon-small-mail.svg"
               alt="Ícone de uma carta"
             />contato@coderise.com.br</a
           >
@@ -362,14 +305,13 @@
             href="https://api.whatsapp.com/send?phone=5399974-7712&text=Quero criar meu site!"
             target="_blank"
             ><img
-              src="./assets/img/icon-small-wpp.svg"
+              src="<?php echo get_bloginfo("template_url") ?>/assets/img/icon-small-wpp.svg"
               alt="Ícone do WhatsApp"
             />(53) 9 9974-7712</a
           >
         </address>
       </div>
     </footer>
-    <script src="assets/vendor/imask/imask.min.js"></script>
-    <script src="assets/js/app.js"></script>
+    <?php wp_footer(); ?>
   </body>
 </html>
